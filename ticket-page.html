@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with =device-width,initial-scale=1.0">
+        <title> Turtle world</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <section class="sub-header5">
+            <nav>
+                <a href="index.html"><img src="log.jpeg" alt="#"></a>
+                <div class="nav-links" id="navlinks">
+                   
+                   
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>BUY TICKETS</h1>
+             </section>
+
+
+
+             <section class="shari">
+              <h1>when are you coming</h1>
+            
+           
+             <div class="date-picker">
+               <input type="date" id="selectedDate">
+               <button onclick="saveDate()">Save Date</button>
+             </div>
+           
+             
+             </section>
+
+
+             
+             <section class="box-col">
+
+               <h1>Guests</h1>
+               <div class="box">
+                <label for="name">Sl Adult's :</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="1" value="0" class="input-field">
+                <div class="inc button">+</div>
+
+              </div>
+
+
+              <div class="box">
+                <label for="name">Sl children :</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="2" value="0" class="input-field">
+                <div class="inc button">+</div>
+
+              </div>
+
+              <div class="box">
+                <label for="name">Foreign adult's :</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="3" value="0" class="input-field">
+                <div class="inc button">+</div>
+
+              </div>
+
+              <div class="box">
+                <label for="name">Foreign children :</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="4" value="0" class="input-field">
+                <div class="inc button">+</div>
+
+              </div>
+
+              <div class="box">
+                <label for="name">Infant's :</label>
+                <div class="dec button">-</div>
+                <input type="text" name="qty" id="5" value="0" class="input-field">
+                <div class="inc button">+</div>
+
+              </div>
+
+              
+            
+
+
+            
+             
+            </section>
+
+              
+                   
+ 
+
+
+                    
+
+  
+  
+
+                <section class="wos">
+                  <h1>select the time durations</h1>
+             <div class="multi-selector">
+              <div class="select-field">
+                <input type="text" name="select time" placeholder="select timeslots" id="check" class="input-selector">
+                <span class="down-arrow">&blacktriangledown;</span>
+                <button onclick="saveTimeSlot()">Save Time Slots</button>  
+              </div>
+              
+              <!------ list of checkboxes and options----->
+              <div class="list">
+              <label for="7.00am-8.00am" class="task">
+                <input type="checkbox" id="7.00am8.00am" 
+                value=" 7.00am - 8.00am" onchange="onSelect(event)"
+                 />
+                 7.00am - 8.00am
+                <span>normal hr</span>
+              </label>
+
+              <label for="8.00am - 9.00am" class="task">
+                <input type="checkbox" name="" id="8.00am - 9.00am" value=" 8.00am - 9.00am" onchange="onSelect(event)" />
+                8.00am - 9.00am
+                <span>normal hr</span>
+              </label>
+
+              <label for="9.00am - 10.00am" class="task">
+                <input type="checkbox" name="" id="9.00am - 10.00am" value="9.00am - 10.00am" onchange="onSelect(event)" />
+                9.00am - 10.00am
+                <span>normal hr</span>
+              </label>
+
+              <label for="10.00am - 11.00am" class="task">
+                <input type="checkbox" name="" id="10.00am - 11.00am" value=" 10.00am - 11.00am" onchange="onSelect(event)"/>
+                10.00am - 11.00am
+                <span>peak hr</span>
+              </label>
+
+              <label for="11.00am - 12.00pm" class="task">
+                <input type="checkbox" name="" id="11.00am - 12.00pm" value="11.00am - 12.00pm" onchange="onSelect(event)"/>
+                11.00am - 12.00pm
+                <span>peak hr</span>
+              </label>
+
+              <label for="12.00pm - 1.00pm" class="task">
+                <input type="checkbox" name="" id="12.00pm - 1.00pm" value=" 12.00pm - 1.00pm" onchange="onSelect(event)"/>
+                12.00pm - 1.00pm
+                <span>peak hr</span>
+              </label>
+
+              <label for="1.00pm - 2.00pm" class="task">
+                <input type="checkbox" name="" id="1.00pm - 2.00pm" value=" 1.00pm - 2.00pm" onchange="onSelect(event)"/>
+                1.00pm - 2.00pm
+                <span>peak hr</span>
+              </label>
+
+              <label for="2.00pm - 3.00pm" class="task">
+                <input type="checkbox" name="" id="2.00pm - 3.00pm" value=" 2.00pm - 3.00pm" onchange="onSelect(event)"/>
+                2.00pm - 3.00pm
+                <span>peak hr</span>
+              </label>
+
+              <label for="3.00pm - 4.00pm" class="task">
+                <input type="checkbox" name="" id="3.00pm - 4.00pm" value="3.00pm - 4.00pm" onchange="onSelect(event)"/>
+                3.00pm - 4.00pm
+                <span>peak hr</span>
+              </label>
+
+              <label for="4.00pm - 5.00pm" class="task">
+                <input type="checkbox" name="" id="4.00pm - 5.00pm" value=" 4.00pm - 5.00pm" onchange="onSelect(event)"/>
+                4.00pm - 5.00pm
+                <span>peak <hr></span>
+              </label>
+
+              <label for="5.00pm - 6.00pm" class="task">
+                <input type="checkbox" name="" id="5.00pm - 6.00pm" value=" 5.00pm - 6.00pm"  onchange="onSelect(event)"/>
+                5.00pm - 6.00pm
+                <span>peak hr</span>
+              </label>
+              </div>
+
+
+             </div>
+
+             <div class="selected-tasks"></div>
+    
+             
+
+
+
+
+
+
+
+
+
+          
+
+               <section class="se">
+               <div class="sdam">
+                <h3>Normal hour charges</h3>
+
+                <table bgcolor="black" width="500">
+                  <tr bgcolor="grey">
+                    <th>Foreign Adults</th>
+                    <th>Foreign child</th>
+                    <th>Sl Adult</th>
+                    <th>Sl child</th>
+                    <th>Infants</th>
+                  </tr>
+
+                  <tr bgcolor="lightgrey" align="center">
+                    <td>$10</td>
+                    <td>$5</td>
+                    <td>$4</td>
+                    <td>$2</td>
+                    <td>Free</td>
+                  </tr>
+
+
+                </table>
+
+               </div>
+
+
+               <div class="maths">
+                <h3>peak hour charges</h3>
+
+                <table bgcolor="black" width="500">
+                  <tr bgcolor="grey">
+                    <th>Foreign Adults</th>
+                    <th>Foreign child</th>
+                    <th>Sl Adult</th>
+                    <th>Sl child</th>
+                    <th>Infants</th>
+                  </tr>
+
+                  <tr bgcolor="lightgrey" align="center">
+                    <td>$10</td>
+                    <td>$5</td>
+                    <td>$4</td>
+                    <td>$2</td>
+                    <td>Free</td>
+                  </tr>
+
+
+                </table>
+
+               </div>
+
+
+              </section>
+            </section>
+
+
+
+<section class="ren">
+                  <div class="ren-col">
+                    <h2>Enter your details for registeration</h2>
+                <a href="details-page.html" class="hero-btn red-btn">Continue with purchase</a>
+                </div>
+                  
+                </section>
+        <section class="footer">
+            <h4>About us</h4>
+            <p>If you like us<br>follow our webpage share our website with your friends and social media's </p>
+            <div class="ic">
+                <img src="social.jpg" alt="#">
+            </div>
+        </section>
+
+    </body>
+</html>
+
+   
